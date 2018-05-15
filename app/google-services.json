@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "697340850633",
+    "firebase_url": "https://proyectox-5700e.firebaseio.com",
+    "project_id": "proyectox-5700e",
+    "storage_bucket": "proyectox-5700e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697340850633:android:e451759d68b2f905",
+        "android_client_info": {
+          "package_name": "ifangeek.com.proyectox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697340850633-vid1pkvbsfksb9h6u8kd3fi0iipqe6bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ifangeek.com.proyectox",
+            "certificate_hash": "f8c6d62622fffdcc2bbcab7df17167086f3c1230"
+          }
+        },
+        {
+          "client_id": "697340850633-huu100dtfos6bqvpinspkvnom2drjdvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrOJF-r1FaQjXyh0HCMyI_UTlXP6NEWCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697340850633-huu100dtfos6bqvpinspkvnom2drjdvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
