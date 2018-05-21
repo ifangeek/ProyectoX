@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ProgressBar
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_register.*
 
 
@@ -41,6 +42,6 @@ class RegisterActivity : AppCompatActivity(), IRegister.View{
     }
 
     override fun onLoginError(message: String?) {
-        TODO()// cuando coloque sus credeciales mal que mensaje debera mostrar
+        Toast.makeText(applicationContext,message,Toast.LENGTH_LONG).show()
     }
 }

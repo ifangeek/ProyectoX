@@ -1,5 +1,7 @@
 package ifangeek.com.proyectox
 
+import javax.security.auth.callback.Callback
+
 interface IRegister {
     interface  View{
         fun showProgress()
@@ -14,7 +16,7 @@ interface IRegister {
     }
 
     interface Model {
-        fun crearUsuario(email:String?,password:String?)
+        fun crearUsuario(email:String?,password:String?,mCallbackState:RegisterModel.CallbackState)
 
     }
 }

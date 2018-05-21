@@ -15,26 +15,25 @@ class RegisterModel(presenter: RegisterPresenter): IRegister.Model {
 
     var presenter: RegisterPresenter? = presenter
     var mAuth: FirebaseAuth? = FirebaseAuth.getInstance()
-    var mCallbackState:CallbackState? = null
 
 
-    override fun crearUsuario(email: String?, password: String?,) {
+    override fun crearUsuario(email: String?, password: String?,mCallbackState: CallbackState) {
         mAuth!!.createUserWithEmailAndPassword(email.toString(), password.toString())
                 .addOnCompleteListener(OnCompleteListener<AuthResult> { task ->
                     if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's informatio
+                        mCallbackState.sucess()
                         d("FIREBASE","Se registro con exito")
                     } else {
-                        // If sign in fails, display a message to the user.
-                        w("FIREBASE",task.exception)
+                        mCallbackState.error("Ocurrio un error al registrar usuario")
                     }
 
                     // ...
                 })
 
     }
+    //1
     interface CallbackState{
         fun sucess()
-        fun error()
+        fun error(mensaje:String)
     }
 }
